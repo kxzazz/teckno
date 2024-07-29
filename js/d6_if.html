@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>if</title>
+    <script>
+      var x = parseInt(prompt("first value?"));
+      var y = parseInt(prompt("second value?"));
+
+      if (x > y) {
+        var temp = x;
+        x = y;
+        y = x;
+      }
+
+      console.log("Values in ascending order: ");
+      console.log(x);
+    </script>
+  </head>
+</html>
