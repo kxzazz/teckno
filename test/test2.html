@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Test 2</title>
+    <script>
+      //Given 3 numbers from user
+      // print the largest unless all are equal then print "SAME"
+      a = parseInt(prompt("Number 1? "));
+      b = parseInt(prompt("Number 2? "));
+      c = parseInt(prompt("Number 3? "));
+      //   if (a === b && b === c) {
+      //     alert("🟰SAME🟰");
+      //   } else {
+      //     if (a >= b && a >= c) {
+      //       alert(a + " is LARGEST");
+      //     } else if (b >= a && b >= c) {
+      //       alert(b + " is LARGEST");
+      //     } else if (c >= a && c >= b) {
+      //       alert(c + " is LARGEST");
+      //     }
+      //   }
+
+      if (a === b && b === c) {
+        alert("🟰SAME🟰");
+      } else if (a > b && a > c) {
+        alert(a + " is LARGEST");
+      } else if (b > c) {
+        alert(b + " is LARGEST");
+      } else {
+        alert(c + " is LARGEST");
+      }
+    </script>
+  </head>
+</html>
