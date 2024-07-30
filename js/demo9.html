@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Implicit conversions</title>
+    <script>
+      var response = confirm("OK | Cancel?");
+      alert(response ? "OK" : "CANCEL"); //boolean can be used without comparisions
+
+      var num = 0.0002; // change it to look at behaviour
+      if (num) console.log("number: TRUE");
+      else console.log("number: FALSE");
+
+      var str = ""; // change it to look at behaviour
+      if (str) console.log("string: TRUE");
+      else console.log("string: FALSE");
+    </script>
+  </head>
+</html>

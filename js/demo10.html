@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nested Ifs</title>
+    <script>
+      var marks1 = parseInt(prompt("Marks in English?"));
+      var marks2 = parseInt(prompt("Marks in Maths?"));
+
+      // Implimentaion 1
+      if (marks1 >= 50) {
+        if (marks2 >= 50) {
+          console.log("Result:PASS");
+        } else {
+          console.log("Result:FAIL");
+        }
+      } else {
+        console.log("Result:FAIL");
+      }
+
+      //Implementation using AND(&&) operator
+      if (marks1 >= 50 && marks2 >= 50) {
+        console.log("Result:PASS");
+      } else {
+        console.log("Result:FAIL");
+      }
+      //Implementation using OR(||) operator
+      if (marks1 < 50 || marks2 < 50) {
+        console.log("Result:FAIL");
+      } else {
+        console.log("Result:PASS");
+      }
+    </script>
+  </head>
+</html>
