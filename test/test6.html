@@ -1,0 +1,10 @@
+<script>
+  var largest = -1;
+  do {
+    var n = parseInt(prompt("Enter a number"));
+    if (n == 0) break;
+    largest = largest < n ? n : largest;
+  } while (n > 0);
+
+  console.log(largest);
+</script>

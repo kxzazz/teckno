@@ -1,0 +1,19 @@
+<script>
+  var n = parseInt(prompt("Enter a Integer Number"));
+  if (n < 2) {
+    alert("Primes starts from 2.");
+  } else {
+    var flag = true;
+    for (var i = 2; i <= n / 2; i++) {
+      if (n % i == 0) {
+        flag = false;
+        break;
+      }
+    }
+    if (flag) {
+      console.log(n + " is a prime");
+    } else {
+      console.log(n + " is not a prime");
+    }
+  }
+</script>

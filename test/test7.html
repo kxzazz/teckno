@@ -1,0 +1,27 @@
+<script>
+  //store 3 user inoput numbers and print all of them,
+
+  var arr = [];
+  //   var arr = new Array(); //instance
+
+  //   var arr = [10, 20, 30]; //array declare w/t Initialisation
+  //  var arr = new Array(10, 20, 30);
+
+  var n = parseInt(prompt("Number of integers to be entered"));
+  for (var i = 0; i < n; i++) {
+    arr[i] = parseInt(prompt("Enter a Integer number"));
+  }
+
+  //INT => 4bytes
+  // arr => 12bytes
+  //INDEX starts from 0
+
+  //   var a = parseInt(prompt("Enter a number"));
+  //   var b = parseInt(prompt("Enter a number"));
+  //   var c = parseInt(prompt("Enter a number"));
+  // Random access => varname1, varname3,...
+
+  for (i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  } //Sequential acces => A[0],A[1],A[2],....
+</script>
