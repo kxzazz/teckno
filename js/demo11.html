@@ -1,19 +1,41 @@
 <script>
-  var n = parseInt(prompt("Enter a Integer Number"));
-  if (n < 2) {
-    alert("Primes starts from 2.");
-  } else {
-    var flag = true;
-    for (var i = 2; i <= n / 2; i++) {
-      if (n % i == 0) {
-        flag = false;
-        break;
-      }
-    }
-    if (flag) {
-      console.log(n + " is a prime");
-    } else {
-      console.log(n + " is not a prime");
-    }
+  var radius = parseFloat(prompt("Enter Radius ( <= 0 to quit)"));
+  while (radius > 0) {
+    var area = Math.PI * radius ** 2;
+    console.log(area);
+    var radius = parseFloat(prompt("Enter Radius ( <= 0 to quit)"));
   }
+
+  console.log("Thank you");
+
+  //Same program using for loop
+  for (
+    var radius = parseFloat(prompt("Enter Radius ( <= 0 to quit)"));
+    radius > 0;
+    radius = parseFloat(prompt("Enter Raduis ( <= 0 to quit)"))
+  ) {
+    var area = Math.PI * radius ** 2;
+    console.log(area);
+  }
+  console.log("Thanks!");
+
+  //for loop as an equivalent while loop
+  var radius = parseFloat(prompt("Enter Radius ( <= 0 to quit)"));
+  for (; radius > 0; ) {
+    var area = Math.PI * radius ** 2;
+    console.log(area);
+    radius = parseFloat(prompt("Enter Raduis ( <= 0 to quit)"));
+  }
+  console.log("Thanks Again");
+
+  //Using do while loop
+  do {
+    var radius = parseFloat(prompt("Enter Radius ( <= 0 to quit)"));
+    if (radius > 0) {
+      var area = Math.PI * radius ** 2;
+      console.log(area);
+    }
+  } while (radius > 0);
+
+  console.log("Again Thanks");
 </script>
