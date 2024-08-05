@@ -1,0 +1,16 @@
+<script>
+  //func that returns fatorial of a given number n
+  function fact(N) {
+    //     if (N == 0) return 1;
+    //     return N * fact(N - 1);
+
+    var fact = 1;
+    for (var i = 1; i <= N; i++) {
+      fact *= i;
+    }
+    return fact;
+  }
+
+  var n = parseInt(prompt("Enter an integer number (>= 0)"));
+  console.log("Factorial of " + n + " is " + fact(n));
+</script>

@@ -1,0 +1,17 @@
+<script>
+  //write a func to print all even numbers from a lwoer boundary and ending at upper boundary
+
+  function print_all_evens_between(lower_bound, upper_bound) {
+    if (lower_bound % 2 == 1) lower_bound++;
+    // if (upper_bound % 2 == 1) upper_bound--;
+
+    for (var i = lower_bound; i <= upper_bound; i += 2) {
+      console.log(i);
+    }
+  }
+
+  print_all_evens_between(1, 41);
+  //   print_all_evens_between(2, 40);
+  //   print_all_evens_between(3, 40);
+  //   print_all_evens_between(2, 41);
+</script>

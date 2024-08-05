@@ -1,0 +1,53 @@
+<script>
+  //Excpected output
+  /*
+    *** //40stars
+    Name  Course
+    *** //40stars
+    Aman  Java
+    Vinay  Python
+    *** //40stars
+    */
+
+  //   var str_star = "";
+  //   for (var i = 1; i <= 40; i++) {
+  //     str_star = str_star + "*";
+  //     // console.log(str);
+  //   }
+
+  //   var str_hash = "";
+  //   for (var i = 1; i <= 40; i++) {
+  //     str_hash = str_hash + "#";
+  //     // console.log(str);
+  //   }
+  //   var str_dollar = "";
+  //   for (var i = 1; i <= 40; i++) {
+  //     str_dollar = str_dollar + "$";
+  //     // console.log(str);
+  //   }
+
+  //   console.log(str_star);
+  //   console.log("Name  Course");
+  //   console.log(str_hash);
+  //   console.log("Aman  Java");
+  //   console.log("Vinay  Python");
+  //   console.log(str_dollar);
+
+  //TO avoid reduncy use functionss
+  //DEFINITION of a function 👇
+  function charline(symb) {
+    var str = "";
+    for (var i = 1; i <= 40; i++) {
+      str = str + symb;
+    }
+
+    document.write("<h1> " + str + " </h1>");
+  }
+
+  charline("*");
+  document.write("<h2> Name  Course</h2>");
+  charline("#");
+  document.write("<h2> Aman  Java</h2>");
+  document.write("<h2> Vinay  Python</h2>");
+  charline("$");
+</script>

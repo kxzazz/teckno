@@ -1,0 +1,19 @@
+<script>
+  //Rewrite charline in test11.html but with default values
+  //Default parameters are only used when args are missing.
+  //Missing args MUST appear as trailing args
+  function charline(symb = "*", n = 40) {
+    str = "";
+    for (var i = 1; i <= n; i++) str += symb;
+    document.write("<h1>" + str + "</h1>");
+    document.write("<br>");
+  }
+
+  charline();
+  //..
+  charline("$");
+  //..
+  charline("@", 20);
+  //..
+  //   charline(, 30); //error
+</script>

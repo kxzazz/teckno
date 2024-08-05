@@ -1,0 +1,20 @@
+<script>
+  //Company offers
+  // if si > 1000 => 10% discount
+  // else => 5% discount
+
+  //Using simple_interest from test13.html
+
+  function simple_interest(p, t, r) {
+    return p * t * r * 0.01;
+  }
+
+  var p = parseFloat(prompt("Enter Principle Amount"));
+  var t = parseFloat(prompt("Enter Time Period"));
+  var r = parseFloat(prompt("Enter Rate of Interest"));
+
+  var si = simple_interest(p, t, r);
+  var discount = si > 1000 ? si * 0.1 : si * 0.05;
+  console.log("Simple Interest: " + si);
+  console.log("Your Discount: " + discount);
+</script>
